@@ -1,0 +1,11 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: traefik-ingress
+  namespace: example-voting-app
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  backend:
+    serviceName: result
+    servicePort: 80
