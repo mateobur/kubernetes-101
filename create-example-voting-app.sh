@@ -260,6 +260,7 @@ spec:
               memory: 64Mi
             requests:
               memory: 32Mi
+              cpu: 200m
     metadata:
       labels:
         name: voter
