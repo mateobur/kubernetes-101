@@ -173,6 +173,7 @@ spec:
               memory: 64Mi
             requests:
               memory: 32Mi
+              cpu: "250m"
     metadata:
       labels:
         name: result
